@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import modelo.Automovil;
 import modelo.Camioneta;
+import modelo.Motocicleta;
 import modelo.Vehiculo;
 
 public class LectorVehiculos {
@@ -30,7 +31,11 @@ public class LectorVehiculos {
             } else if (tipo.equalsIgnoreCase("CAMIONETA")) {
                 vehiculos.add(new Camioneta(marca, modelo, anio,
                         precio, caracteristica));
+            } else if (tipo.equalsIgnoreCase("MOTOCICLETA")) {
+                vehiculos.add(new Motocicleta(marca, modelo, anio,
+                        precio, (int) caracteristica));
             }
+
         }
         return vehiculos;
     }
