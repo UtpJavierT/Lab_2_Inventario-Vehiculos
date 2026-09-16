@@ -2,7 +2,7 @@ package modelo;
 
 public abstract class Vehiculo {
     private final String marca;
-    private final String modelo;
+    protected final String modelo;
     private final int anio;
     private final double precio;
 
